@@ -1,6 +1,46 @@
-/*
-Place your custom CSS here
-*/
-.widget-hello-world {
+.CountBar {
+    display: inline-flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto
+}
 
+.CountBarSection {
+    display: flex;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.CountBarSection p {
+    margin: auto;
+    color: white;
+}
+
+.CountBarKey {
+    display: inline-flex;
+}
+
+.KeyContainer {
+    display: flex;
+    margin-top: 15px;
+    width: 100%;
+}
+.KeyContainer div {
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+
+.KeyContainer_ColourIndicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.KeyContainer p {
+    /* max-width: 60%; */
+    font-weight: bold;
+    font-size: 0.75em;
+    white-space: nowrap;
 }

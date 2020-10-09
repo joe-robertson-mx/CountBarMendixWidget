@@ -4,14 +4,193 @@
         xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Count Bar</name>
-    <description>A bar to display various counts viually</description>
+    <description>A bar to display various counts visually</description>
     <icon/>
     <properties>
-        <propertyGroup caption="General">
-            <property key="sampleText" type="string" required="false">
-                <caption>Default value</caption>
-                <description>Sample text input</description>
-            </property>
+        <propertyGroup caption="Total">
+            <property key="TotalValue" type="attribute" required="true">
+                <caption>Value</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property> 
+            <property key="TotalColour" type="string" required="true">
+                <caption>Colour</caption>
+                <description>The colour the bar section should appear e.g. 'red' or '#ff0000'</description>
+            </property> 
+        </propertyGroup>
+
+        <propertyGroup caption="Value 1">
+            <property key="Value1" type="attribute" required="true">
+                <caption>Value</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property> 
+            <property key="Colour1" type="string" required="true">
+                <caption>Colour</caption>
+                <description>The colour the bar section should appear e.g. 'red' or '#ff0000'</description>
+            </property> 
+            <property key="Description1" type="string" required="true">
+                <caption>Description</caption>
+                <description>The name displayed on the key</description>
+            </property> 
+        </propertyGroup>
+
+        <propertyGroup caption="Value 2">
+            <property key="Value2" type="attribute" required="false">
+                <caption>Value</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property> 
+            <property key="Colour2" type="string" required="false">
+                <caption>Colour</caption>
+                <description>The colour the bar section should appear e.g. 'red' or '#ff0000'</description>
+            </property> 
+            <property key="Description2" type="string" required="false">
+                <caption>Description</caption>
+                <description>The name displayed on the key</description>
+            </property> 
+        </propertyGroup>
+        <propertyGroup caption="Value 3">
+            <property key="Value3" type="attribute" required="false">
+                <caption>Value</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property> 
+            <property key="Colour3" type="string" required="false">
+                <caption>Colour</caption>
+                <description>The colour the bar section should appear e.g. 'red' or '#ff0000'</description>
+            </property> 
+            <property key="Description3" type="string" required="false">
+                <caption>Description</caption>
+                <description>The name displayed on the key</description>
+            </property> 
+        </propertyGroup>
+        <propertyGroup caption="Value 4">
+            <property key="Value4" type="attribute" required="false">
+                <caption>Value</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property> 
+            <property key="Colour4" type="string" required="false">
+                <caption>Colour</caption>
+                <description>The colour the bar section should appear e.g. 'red' or '#ff0000'</description>
+            </property> 
+            <property key="Description4" type="string" required="false">
+                <caption>Description</caption>
+                <description>The name displayed on the key</description>
+            </property> 
+        </propertyGroup>
+        <propertyGroup caption="Value 5">
+            <property key="Value5" type="attribute" required="false">
+                <caption>Value</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property> 
+            <property key="Colour5" type="string" required="false">
+                <caption>Colour</caption>
+                <description>The colour the bar section should appear e.g. 'red' or '#ff0000'</description>
+            </property> 
+            <property key="Description5" type="string" required="false">
+                <caption>Description</caption>
+                <description>The name displayed on the key</description>
+            </property> 
+        </propertyGroup>
+        <propertyGroup caption="Value 6">
+            <property key="Value6" type="attribute" required="false">
+                <caption>Value</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property> 
+            <property key="Colour6" type="string" required="false">
+                <caption>Colour</caption>
+                <description>The colour the bar section should appear e.g. 'red' or '#ff0000'</description>
+            </property> 
+            <property key="Description6" type="string" required="false">
+                <caption>Description</caption>
+                <description>The name displayed on the key</description>
+            </property> 
+        </propertyGroup>
+        <propertyGroup caption="Value 7">
+            <property key="Value7" type="attribute" required="false">
+                <caption>Value</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property> 
+            <property key="Colour7" type="string" required="false">
+                <caption>Colour</caption>
+                <description>The colour the bar section should appear e.g. 'red' or '#ff0000'</description>
+            </property> 
+            <property key="Description7" type="string" required="false">
+                <caption>Description</caption>
+                <description>The name displayed on the key</description>
+            </property> 
+        </propertyGroup>
+        <propertyGroup caption="Value 8">
+            <property key="Value8" type="attribute" required="false">
+                <caption>Value</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property> 
+            <property key="Colour8" type="string" required="false">
+                <caption>Colour</caption>
+                <description>The colour the bar section should appear e.g. 'red' or '#ff0000'</description>
+            </property> 
+            <property key="Description8" type="string" required="false">
+                <caption>Description</caption>
+                <description>The name displayed on the key</description>
+            </property> 
+        </propertyGroup>
+        <propertyGroup caption="Value 9">
+            <property key="Value9" type="attribute" required="false">
+                <caption>Value</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property> 
+            <property key="Colour9" type="string" required="false">
+                <caption>Colour</caption>
+                <description>The colour the bar section should appear e.g. 'red' or '#ff0000'</description>
+            </property> 
+            <property key="Description9" type="string" required="false">
+                <caption>Description</caption>
+                <description>The name displayed on the key</description>
+            </property> 
+        </propertyGroup>
+        <propertyGroup caption="Value 10">
+            <property key="Value10" type="attribute" required="false">
+                <caption>Value</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property> 
+            <property key="Colour10" type="string" required="false">
+                <caption>Colour</caption>
+                <description>The colour the bar section should appear e.g. 'red' or '#ff0000'</description>
+            </property> 
+            <property key="Description10" type="string" required="false">
+                <caption>Description</caption>
+                <description>The name displayed on the key</description>
+            </property> 
         </propertyGroup>
     </properties>
 </widget>
